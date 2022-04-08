@@ -1,0 +1,212 @@
+/* chewy-regular - latin */
+@font-face {
+  font-family: "Chewy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/chewy/chewy-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/chewy/chewy-v12-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/chewy/chewy-v12-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/chewy/chewy-v12-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/chewy/chewy-v12-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/chewy/chewy-v12-latin-regular.svg#Chewy") format("svg"); /* Legacy iOS */
+}
+/* barlow-regular - latin */
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/barlow/barlow-v5-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/barlow/barlow-v5-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/barlow/barlow-v5-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/fonts/barlow/barlow-v5-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("/fonts/barlow/barlow-v5-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/barlow/barlow-v5-latin-regular.svg#Barlow") format("svg"); /* Legacy iOS */
+}
+
+body {
+  background-image: url("/img/star_bg.png");
+  background-size: 1001px;
+  background-color: #3f3f6f;
+  font-family: Barlow;
+}
+
+header {
+  position: absolute;
+  width: 100vw;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(180deg, #00e0ff 0%, #0267ff 100%);
+}
+
+.logo {
+  position: relative;
+  width: 159px;
+  height: 50px;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.55);
+  border-radius: 50px;
+
+  .error_left {
+    flex: 33%;
+    position: relative;
+    height: 100%;
+    border-radius: 50px;
+
+    img {
+      position: relative;
+      height: auto;
+      width: auto;
+      max-width: 80%;
+      max-height: 60%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .error_right {
+    flex: 66%;
+    position: relative;
+    height: 100%;
+    border-radius: 50px;
+
+    #error_right_container {
+      position: absolute;
+      height: auto;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #error_title {
+      position: relative;
+      padding-bottom: 1em;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Chewy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 55px;
+      line-height: 66px;
+      align-items: center;
+      text-align: center;
+      color: #ffda00;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #ff9900;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    #error_message {
+      position: relative;
+      font-size: 30px;
+      padding-bottom: 1em;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      overflow-wrap: break-word;
+    }
+
+    #error_back,
+    #error_login {
+      cursor: pointer;
+      position: relative;
+      background: #001e53;
+      border: 5px solid #ffda00;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 100px;
+      font-family: Chewy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 80px;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      width: 500px;
+      max-width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::before {
+        content: "← ";
+      }
+    }
+  }
+}
+
+footer {
+  img {
+    position: fixed;
+    bottom: -5vw;
+    width: 110%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 970px) {
+  .container {
+    flex-direction: column;
+  }
+  .error_left {
+    height: 50% !important;
+    #character_image {
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      max-height: 90%;
+    }
+  }
+  .error_right {
+    height: 50% !important;
+
+    #error_title,
+    #error_message {
+      padding-bottom: 0;
+      margin: 0;
+    }
+
+    #error_back,
+    #error_login {
+      max-width: 90%;
+    }
+  }
+}
