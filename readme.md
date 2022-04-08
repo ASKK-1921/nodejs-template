@@ -27,9 +27,9 @@
     <br />
     <a href="#"><s>Samples coming soon</s></a>
     ·
-    <a href="https://github.com/ASKK-1921/node-js-template/issues">Report Bug</a>
+    <a href="https://github.com/ASKK-1921/nodejs-template/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ASKK-1921/node-js-template/issues">Request Feature</a>
+    <a href="https://github.com/ASKK-1921/nodejs-template/issues">Request Feature</a>
   </p>
 </div>
 
@@ -115,7 +115,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ASKK-1921/node-js-template.git
+   git clone https://github.com/ASKK-1921/nodejs-template.git
    ```
 2. Install NPM packages
    ```sh
@@ -179,7 +179,7 @@ npm test #Runs the mocha test files. You might need to run npm start in a side t
 - [ ] Feature 3
     - [ ] Nested Feature -->
 
-See the [open issues](https://github.com/ASKK-1921/node-js-template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ASKK-1921/nodejs-template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -217,7 +217,7 @@ Distributed under the MIT License. <!-- See `LICENSE.txt` for more information. 
 
 Andy Kellock - a_kellock@hotmail.com
 
-Project Link: [https://github.com/ASKK-1921/node-js-template](https://github.com/ASKK-1921/node-js-template)
+Project Link: [https://github.com/ASKK-1921/nodejs-template](https://github.com/ASKK-1921/nodejs-template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -236,16 +236,16 @@ Project Link: [https://github.com/ASKK-1921/node-js-template](https://github.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ASKK-1921/node-js-template.svg?style=for-the-badge
-[contributors-url]: https://github.com/ASKK-1921/node-js-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ASKK-1921/node-js-template.svg?style=for-the-badge
-[forks-url]: https://github.com/ASKK-1921/node-js-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/ASKK-1921/node-js-template.svg?style=for-the-badge
-[stars-url]: https://github.com/ASKK-1921/node-js-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ASKK-1921/node-js-template.svg?style=for-the-badge
-[issues-url]: https://github.com/ASKK-1921/node-js-template/issues
-[license-shield]: https://img.shields.io/github/license/ASKK-1921/node-js-template.svg?style=for-the-badge
-[license-url]: https://github.com/ASKK-1921/node-js-template/blob/master/license.txt
+[contributors-shield]: https://img.shields.io/github/contributors/ASKK-1921/nodejs-template.svg?style=for-the-badge
+[contributors-url]: https://github.com/ASKK-1921/nodejs-template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ASKK-1921/nodejs-template.svg?style=for-the-badge
+[forks-url]: https://github.com/ASKK-1921/nodejs-template/network/members
+[stars-shield]: https://img.shields.io/github/stars/ASKK-1921/nodejs-template.svg?style=for-the-badge
+[stars-url]: https://github.com/ASKK-1921/nodejs-template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ASKK-1921/nodejs-template.svg?style=for-the-badge
+[issues-url]: https://github.com/ASKK-1921/nodejs-template/issues
+[license-shield]: https://img.shields.io/github/license/ASKK-1921/nodejs-template.svg?style=for-the-badge
+[license-url]: https://github.com/ASKK-1921/nodejs-template/blob/master/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/andrew-kellock
 [product-screenshot]: public/img/screenshot.png
