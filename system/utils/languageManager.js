@@ -1,6 +1,13 @@
 const fs = require('fs');
 const cookieManager = require('./cookieManager');
 
+/**
+ *	Load text from a JSON file according to language cookie settings
+ * @param {request} req The Express request
+ * @param {response} res The Express response
+ * @param {string} errorPage The error code if applicable
+ * @returns {json} Text data for the page
+ */
 module.exports = (req, res, errorPage = false) => {
 	let language = req.query.lang ? req.query.lang : req.cookies.lang || 'en';
 	const languageFiles = `./public/languages`;

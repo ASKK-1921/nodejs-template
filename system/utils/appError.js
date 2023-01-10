@@ -1,3 +1,6 @@
+/**
+ * Handler for returning user-friendly error messages
+ */
 class AppError extends Error {
 	constructor(message, statusCode) {
 		super(message);
