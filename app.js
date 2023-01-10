@@ -13,6 +13,7 @@ const hpp = require('hpp');
 
 // Utilities
 const AppError = require('./system/utils/appError');
+const languageManager = require('./system/utils/languageManager');
 
 // Routers
 const viewRouter = require('./system/routes/viewRoutes');
@@ -124,7 +125,8 @@ app.use('/', viewRouter);
 
 // Clean error reporting
 app.all('*', (req, res, next) => {
-	next(new AppError(`(404) We couldn't find this page. Please go back and try again!`, 404));
+	const errorMessage = languageManager(req, res, '404');
+	next(new AppError(errorMessage, 404));
 });
 
 app.use(errorController);

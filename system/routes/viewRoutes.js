@@ -1,16 +1,16 @@
-// Dependencies
+// --- DEPENDENCIES ---
 const express = require('express');
 
-// Controllers
+// --- CONTROLLERS ---
 const viewsController = require('../controllers/viewsController');
 
-// Initialise the router
+// --- ROUTER ---
 const router = express.Router();
 
-// Patch root directory for EJS files
-router.use(viewsController.ejsRootPatch);
+// --- ROUTES ---
 
-// Public area on the Landing Page
+// Public pages
 router.get('/', viewsController.getPage('home'));
 
+// --- EXPORTS ---
 module.exports = router;
