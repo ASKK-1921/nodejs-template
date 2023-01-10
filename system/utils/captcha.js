@@ -1,5 +1,12 @@
 const svgCaptcha = require('svg-captcha');
 
+/**
+ * Function to generate captcha elements
+ * @param {request} req The request object
+ * @param {response} res The response object
+ * @param {next} next Next to move on to the next element
+ * @returns {json} JSON containing status and generated captcha data
+ */
 exports.getCaptchaDeck = (req, res, next) => {
 	const setCount = parseInt(req.query.setCount, 10) || 3;
 	const captchaDeck = [];

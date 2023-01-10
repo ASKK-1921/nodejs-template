@@ -6,7 +6,12 @@ const sgMail = require('@sendgrid/mail');
 sgClient.setApiKey(process.env.SENDGRID_API_KEY);
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-// Send emails from a contact form
+/**
+ * Send emails from a contact form
+ * @param {string} templateId Mailing template string from SendGrid
+ * @param {JSON} templateData Data to be used with the template
+ * @returns {string} Either "error" or "success"
+ */
 exports.contactEmail = async (templateId, templateData) => {
 	const msg = {
 		to: {
@@ -38,7 +43,13 @@ exports.contactEmail = async (templateId, templateData) => {
 	return 'success';
 };
 
-// Template to easily send emails from anywhere in the system
+/**
+ * Template to easily send emails from anywhere in the system
+ * @param {string} templateId Mailing template string from SendGrid
+ * @param {JSON} user User from the database
+ * @param {JSON} templateData Data to be used with template
+ * @returns {string} Either "error" or "success"
+ */
 exports.sendEmail = async (templateId, user, templateData) => {
 	const msg = {
 		to: {
@@ -71,7 +82,12 @@ exports.sendEmail = async (templateId, user, templateData) => {
 	return 'success';
 };
 
-// Add users to mailing lists
+/**
+ * Add users to mailing lists
+ * @param {string} name Name of the user
+ * @param {string} email Email of the user
+ * @returns {string} Either "error" or "success"
+ */
 exports.addToMailingList = async (name, email) => {
 	const options = {
 		method: 'PUT',
@@ -95,7 +111,11 @@ exports.addToMailingList = async (name, email) => {
 	return 'success';
 };
 
-// Add user to contacts
+/**
+ * Add user to contacts
+ * @param {JSON} user User from the database
+ * @returns {string} Either "error" or "success"
+ */
 exports.addToContacts = async (user) => {
 	const options = {
 		method: 'PUT',
