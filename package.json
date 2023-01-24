@@ -31,7 +31,7 @@
 		"morgan": "^1.10.0",
 		"path": "^0.12.7",
 		"svg-captcha": "^1.4.0",
-		"ua-parser-js": "^1.0.32",
+		"ua-parser-js": "^1.0.33",
 		"validator": "^13.7.0",
 		"xss-clean": "^0.1.1"
 	},
