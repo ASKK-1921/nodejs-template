@@ -1,4 +1,5 @@
 // --- DEPENDENCIES ---
+const renderPage = require('../utils/renderPage');
 
 // --- MODELS ---
 
