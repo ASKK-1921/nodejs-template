@@ -32,8 +32,9 @@ const app = require('./app');
 
 // Establish connection to the database
 // mongoose
-// 	.connect(db, { useUnifiedTopology: true, useNewUrlParser: true })
-// 	.then(() => console.log('=^_^= DB connection successful =^_^='));
+// 	.set('strictQuery', false)
+// 	.connect(db(), { useUnifiedTopology: true, useNewUrlParser: true })
+// 	.then(() => console.log('=^_^= DB Connection successful =^_^='));
 
 // Set listening port
 const port = process.env.PORT || 3000;
